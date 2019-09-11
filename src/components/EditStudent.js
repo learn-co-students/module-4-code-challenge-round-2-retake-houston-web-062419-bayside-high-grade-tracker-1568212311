@@ -1,11 +1,13 @@
 import React from 'react'
+// import Student from "./Student";
 
-const EditStudent = () => {
+const EditStudent = (props) => {
 
   return (
     <form
       className="ui form center aligned sixteen wide column"
-      onSubmit={""}
+      onSubmit={null}
+      
     >
       <div className="inline fields">
         <div className="four wide field">
@@ -25,10 +27,13 @@ const EditStudent = () => {
             id="percentage"
             type="number"
           />
+        
         </div>
-        <button className="ui button" type="submit">
+        {/* {props.currentStudent.map(student=> <Student {...student}/>)} */}
+       
+        <button className="ui button" type="submit" >
           Submit
-        </button>
+        </button >
       </div>
     </form>
   )
